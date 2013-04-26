@@ -1,0 +1,29 @@
+﻿@using Docs.Core
+@{ Page.Title = "NuGet Specs"; }
+
+<h1>NuGet Specs</h1>
+
+<p>
+    This website contains specifications for potential new features to NuGet
+    and the NuGet Gallery. Once features are completed, the spec will be
+    moved over to <a href="http://docs.nuget.org">docs.nuget.org</a>.
+</p>
+<p>
+    To create a spec, fork the <a href="https://github.com/nuget/NuGetSpecs">NuGetSpecs repository</a>
+    and create a new Markdown document within the Specs folder, and then submit a pull request.
+</p>
+
+<ol class="topics">
+    @foreach (var topic in Topic.GetTopics("~/specs")) {
+        <li class="topic">
+        <h2>@topic.Title</h2>
+        @if (topic.SubTopics.Any()) {
+            <ol class="subTopics">
+                @foreach (var subTopic in topic.SubTopics) {
+                    <li class="subTopic"><h3><a href="@subTopic.Url">@subTopic.Title</a></h3></li>
+                }
+            </ol>
+        }
+        </li>
+    }
+</ol>
