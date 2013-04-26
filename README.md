@@ -1,11 +1,10 @@
-NuGetSpecs
-==========
+# NuGet Specifications
 
 Specs for potential new features for NuGet and the NuGet Gallery
 
 # NuGet Feature Specification Template
 
-This document outlines the key elements needed for creating a NuGet feature specification. The different elements and sections of the document should be thought of as a helpful tool for organizing thoughts related to a feature and not as a prescription. Comments should be added inline using github's commenting capabilities.
+This document outlines the key elements needed for creating a NuGet feature specification. The different elements and sections of the document should be thought of as a helpful tool for organizing thoughts related to a feature and not as a prescription. Comments should be added in-line using GitHub's commenting capabilities.
 
 ## Overview
 The purpose of this section is to describe the high level motivations for the feature.
@@ -21,7 +20,7 @@ Describe how this feature will address the problem
 
 #### Non-Goals
 * List out things that are nice-to-have but not the core goals of the feature
-* This can include things like nice side-effects; they may be serendipidous, but it's helpful to have clarity around what is an explicit vs. non-explicit goal of the feature
+* This can include things like nice side-effects; they may be serendipitous, but it's helpful to have clarity around what is an explicit vs. non-explicit goal of the feature
 
 ## User Scenarios
 Captures narratives from a user's perspective on how the feature will solve the problem or problems outlined above. Each scenario should be listed under a new header
