@@ -1,6 +1,6 @@
 # Showing Package Dependents
 
-## Scenario:
+## Scenario
 
 The NuGet Gallery has to show the list of "Dependents" for a package similar to "Dependencies". This will help package authors and consumers in the following ways:
 
@@ -9,13 +9,13 @@ The NuGet Gallery has to show the list of "Dependents" for a package similar to 
 
 Reference implementation from NPM:
 
-* https://npmjs.org/package/commander
+* [https://npmjs.org/package/commander](https://npmjs.org/package/commander)
 
-### Tracking issues:
+### Tracking issues
 
-1. https://github.com/NuGet/NuGetGallery/issues/445
-1. https://github.com/NuGet/NuGetGallery/issues/922
-1. https://github.com/NuGet/NuGetGallery/issues/1029
+1. [https://github.com/NuGet/NuGetGallery/issues/445](https://github.com/NuGet/NuGetGallery/issues/445)
+1. [https://github.com/NuGet/NuGetGallery/issues/922](https://github.com/NuGet/NuGetGallery/issues/922)
+1. [https://github.com/NuGet/NuGetGallery/issues/1029](https://github.com/NuGet/NuGetGallery/issues/1029)
 
 ## Basic flow:
 
@@ -53,10 +53,10 @@ For C’s package version < 2.0.0, "Dependents" will show something like:
 ## Non-goals:
 
 1. Showing multiple levels of dependents or a dependency graph is not required for the below reasons :
-    a. A dependency graph can grow big too easily for popular packages with lots of nodes and edges and it would be difficult to interpret any data out of it.
-    a. We need to deal with cases like "Circular dependency" and it might be a performance hit while loading package page.
-    a. As a package author, I would be only interested in the packages that are directly dependent on me and not on in-direct dependencies.
-    a. In any case, if it is required to find the in-direct dependents, users can do it by an extra click – go to the dependent package’s page and view its dependents.
+    1. A dependency graph can grow big too easily for popular packages with lots of nodes and edges and it would be difficult to interpret any data out of it.
+    1. We need to deal with cases like "Circular dependency" and it might be a performance hit while loading package page.
+    1. As a package author, I would be only interested in the packages that are directly dependent on me and not on in-direct dependencies.
+    1. In any case, if it is required to find the in-direct dependents, users can do it by an extra click – go to the dependent package’s page and view its dependents.
 1. This will be just a Gallery feature and we will not be integrating it with the client side (to be able to view all the dependents of a package from all the feeds). Such feature can be added as an extension to NuGet.exe or NPE by the community, but it will not be a first class feature in VS.
 
 ## Open questions:
