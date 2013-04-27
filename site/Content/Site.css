@@ -97,7 +97,7 @@ nav {
 
 #body {
     font-family: "Segoe UI", "Trebuchet MS", Verdana, Helvetica, Sans-Serif;
-    padding-bottom: 145px;
+    padding-bottom: 165px;
 }
 
 #layout-footer {
@@ -107,8 +107,8 @@ nav {
     padding-top: 0px;
     padding-bottom: 0px;
     position: relative;
-	margin-top: -141px;
-	height: 140px;
+	margin-top: -161px;
+	height: 160px;
 	clear: both;
 }
 
