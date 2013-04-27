@@ -26,9 +26,7 @@ Reference implementation from NPM:
 
 ### Example:
 
-```
-Package A is dependent on package B with a version spec >=1.0.0 and <= 2.0.0
-```
+> Package A is dependent on package B with a version spec >=1.0.0 and <= 2.0.0
 
 An entry like "A, depends on B >=1.0.0 && <= 2.0.0" would be shown as a "Dependent" on all versions of package B from 1.0.0 to 2.0.0 inclusive.
 
@@ -46,15 +44,11 @@ An entry like "A, depends on B >=1.0.0 && <= 2.0.0" would be shown as a "Depende
 
 For C’s package version > 2.0.0, "Dependents" will show something like:
 
-```
-A depends on C > 2.0.0, incompatible with dependent B.
-```
+> A depends on C > 2.0.0, incompatible with dependent B.
 
 For C’s package version < 2.0.0, "Dependents" will show something like:
 
-```
-B depends on C < 2.0.0, incompatible with dependent A.
-```
+> B depends on C < 2.0.0, incompatible with dependent A.
 
 ## Non-goals:
 
