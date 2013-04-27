@@ -6,6 +6,10 @@ Specs for potential new features for NuGet and the NuGet Gallery
 
 This document outlines the key elements needed for creating a NuGet feature specification. The different elements and sections of the document should be thought of as a helpful tool for organizing thoughts related to a feature and not as a prescription. Comments should be added in-line using GitHub's commenting capabilities.
 
+## Status: [Ready|Working]
+* Ready - has been reviewed by the community and is believed by the author to be ready for development
+* Working - indicates that the author is actively working on the specification
+
 ## Overview
 The purpose of this section is to describe the high level motivations for the feature.
 
