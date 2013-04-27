@@ -17,10 +17,10 @@ namespace Docs.Core.MarkdownEngine {
     /// </summary>
     public class MarkdownWebPage : WebPage {
         private const int CacheTimeout = 24 * 60 * 60;
-        private static List<string> _virtualPathDependencies = new List<string> { "~/Docs/_TableOfContents.cshtml", 
+        private static List<string> _virtualPathDependencies = new List<string> { "~/Specs/_TableOfContents.cshtml", 
                                                                                   "~/_PageStart.cshtml", 
                                                                                   "~/_Layout.cshtml",
-                                                                                  "~/Docs/_DocLayout.cshtml" };
+                                                                                  "~/Specs/_SpecLayout.cshtml" };
 
         public override void Execute() {
             InitalizeCache();
